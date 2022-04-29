@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="icon" href="img/couple.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>You are <span class="auto-type"></span></h1>
+        </div>
+       
+        <div class="vid">
+            <video src="video/video.mp4" controls ></video>
+        </div>
+        <div class="overlay">
+            <div class="title">Wedding Ceremony Countdown</div>
+            <div class="title" id="end-date">7 May 2022 ,07:30 PM</div>
+            <div class="col">
+                <div>
+                    <input type="text" readonly value="0">
+                    <br />
+                    <label for="">Days</label>
+                </div>
+                <div>
+                    <input type="text" readonly value="0">
+                    <br />
+                    <label for="">Hours</label>
+                </div>
+                <div>
+                    <input type="text" readonly value="0">
+                    <br />
+                    <label for="">Minutes</label>
+                </div>
+                <div>
+                    <input type="text" readonly value="0">
+                    <br />
+                    <label for="">Seconds</label>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <h1>For Venue Location</h1>
+        <a href="/countdown/location.html">Click Here</a>
+        </div>
+   
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Invited", "Welcomed"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
